@@ -3,9 +3,11 @@ class Solution:
     def trap(self, height):
         if not height:
             return 0
-        n, res = len(height), 0
+        # set n for the length of the list "height"
+        n = len(height)
+        # set left_max list the same length of the
         left_max, right_max = [0] * n, [0] * n
-           
+
         # scan from left to right to find the highest left edge
         left_max[0] = height[0]
         for i in range(1, n):
@@ -18,9 +20,9 @@ class Solution:
 
         #Scan each position, using the shortest left and right sides of the current position as the length,
         # and subtract the value of the current position to obtain the capacity of the current position
+        res = 0
         for i in range(1, n-1):
             res += min(left_max[i], right_max[i]) - height[i]
-
         return res
 #LeftMax: [0, 1, 1, 2, 2, 2, 2, 3, 3, 3, 3, 3]
 #RigthMax: [3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 2, 1]
