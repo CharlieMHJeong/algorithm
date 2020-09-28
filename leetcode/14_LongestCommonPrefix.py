@@ -10,12 +10,12 @@ class Solution:
         #find the shortest word from the list
         shortest = min(strs, key=len)
 
-
-        #go through each character in the shortest
+        #go through each char in the shortest
         for i, ch in enumerate(shortest):
-            #From the Each word in the list
+            #Go throuth the Each word in the list
             for str in strs:
-                #compare each character with the each char in the shortest
+                # compare each char of the each word 
+                #with the each char in the shortest
                 if str[i] != ch:
                     return shortest[:i]
         return shortest
