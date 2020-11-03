@@ -1,6 +1,6 @@
 # frequency_histogram.py
 # 1. Asks the user for the input file's name;
-# 2. Read the file (if possible ensure that you enable the file error handling with strerror()) and counts all the Latin letters( lower- and upper-case letters are treated as equal)
+# 2. Read the file (enable the file error handling with strerror()) and counts all the Latin letters(lowerCase and upperCase letters are treated as equal)
 # 3. The histogram should be sent to a file the same name as the input one, but with the suffix '.hist'). 
 
 from os import strerror
