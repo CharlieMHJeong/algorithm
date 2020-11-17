@@ -12,7 +12,6 @@ Malika
 56.00
 """
 
-
 def number_of_records():
     # n = int(input("Enter number of Students: "))
     n = int(input(""))
@@ -34,3 +33,5 @@ if studentname in mark_dict:
     score_list = mark_dict[studentname]
     ave = sum(score_list)/len(score_list)
     print("{:.2f}".format(ave))
+
+    
