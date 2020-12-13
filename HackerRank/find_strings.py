@@ -1,10 +1,13 @@
 """
 https://www.hackerrank.com/challenges/find-a-string/problem
+
 Output Format
 Output the integer number indicating the total number of occurrences of the substring in the original string.
+
 Sample Input
 ABCDCDC
 CDC
+
 Sample Output
 2
 """
