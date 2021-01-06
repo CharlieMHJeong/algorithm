@@ -5,5 +5,12 @@ def fibonacci_gen():
         trailing, lead = lead, trailing + lead
 
 fib = fibonacci_gen()
+fib_list = []
 for _ in range(10):
-    print(fib.__next__())
+    fib_list.append(fib.__next__())
+
+print(fib_list)
+# ==> [1, 1, 2, 3, 5, 8, 13, 21, 34, 55]
+    
+    
+    
