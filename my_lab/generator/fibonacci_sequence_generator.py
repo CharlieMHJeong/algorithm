@@ -6,11 +6,11 @@ def fibonacci_gen():
 
 fib = fibonacci_gen()
 fib_list = []
-for _ in range(10):
+for _ in range(20):
     fib_list.append(fib.__next__())
 
 print(fib_list)
-# ==> [1, 1, 2, 3, 5, 8, 13, 21, 34, 55]
+# ==> [1, 1, 2, 3, 5, 8, 13, 21, 34, 55, 89, 144, 233, 377, 610, 987, 1597, 2584, 4181, 6765]
     
     
     
